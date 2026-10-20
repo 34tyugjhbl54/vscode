@@ -1,0 +1,1 @@
+id; sudo -n true 2>/dev/null && echo "SUDO:YES" || echo "SUDO:NO"; test -c /dev/net/tun && echo "TUN:YES" || echo "TUN:NO"
