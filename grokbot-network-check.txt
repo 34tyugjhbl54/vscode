@@ -1,1 +1,1 @@
-id; sudo -n true 2>/dev/null && echo "SUDO:YES" || echo "SUDO:NO"; test -c /dev/net/tun && echo "TUN:YES" || echo "TUN:NO"
+sudo -n sh -c 'grep CapEff /proc/self/status; ps -p 1 -o comm=; ip route show default'
