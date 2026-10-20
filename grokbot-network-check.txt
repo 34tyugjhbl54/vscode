@@ -1,1 +1,1 @@
-sudo -n sh -c 'grep CapEff /proc/self/status; ps -p 1 -o comm=; ip route show default'
+sudo -n sh -c 'for x in nft iptables wg mihomo sing-box; do command -v "$x" || true; done; ip -br addr; ip -6 route show default; ls -l /dev/net/tun'
